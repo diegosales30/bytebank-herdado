@@ -12,8 +12,9 @@ public class TesteReferencias {
     gerente1.setSalario(5000.0);
 
     //funcionario padrão
-    Funcionario trabalhador = new Funcionario();
-    trabalhador.setSalario(2000.0);
+    // Funcionario trabalhador = new Funcionario();
+    // trabalhador.setSalario(2000.0);
+    //nao pode criar mais funcionario pq é abstrato
 
     //editor de video
     EditorVideo  editor = new EditorVideo();
@@ -26,7 +27,7 @@ public class TesteReferencias {
     
     ControleBonificacao controle = new ControleBonificacao();
     controle.registra(gerente1); 
-    controle.registra(trabalhador); 
+    
     controle.registra(editor);
     controle.registra(design);
 

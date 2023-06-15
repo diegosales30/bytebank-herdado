@@ -1,15 +1,18 @@
 package bytebackherdado;
-
-public class Funcionario {
+//ABSTRACT NA CLASSE SIGNIFICA QUE NAO PODE INSTANCIAR, ela é abstrata.
+public abstract class Funcionario {
 
   private String nome;
   private String cpf;
   //protected double salario; //publico para as classes filhos, privado pro resto, mas nao usamos muito.
   private double salario;
 
-  public double getBonificacao() {
-    return this.salario * 0.05;
-  }
+  //cada classe filho tem sua proprio metodo de bonificação
+  //ABSTRACT NO METODO, SIGNIFICA QUE METODO NAO TEM CORPO;
+  public abstract double getBonificacao();
+  // public double getBonificacao(){
+  //   return -1; gambiarra;
+  // }
 
   //get e set nome
   public String getNome() {

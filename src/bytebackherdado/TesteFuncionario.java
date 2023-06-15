@@ -2,7 +2,7 @@ package bytebackherdado;
 
 public class TesteFuncionario {
   public static void main(String[] args) {
-    Funcionario funcionario = new Funcionario();
+    Gerente funcionario = new Gerente();
 
     funcionario.setNome("Diego sales");
     funcionario.setCpf("02355598741");
