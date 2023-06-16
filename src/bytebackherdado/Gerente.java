@@ -1,26 +1,6 @@
 package bytebackherdado;
+public class Gerente extends FuncionarioAutenticavel {
 
-//gerente extend um funcionado pq é um funcionario tbm
-public class Gerente extends Funcionario {
-  
-  private int senha;
-
-  public boolean autentica(int senha) {
-    if(this.senha == senha) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-
-  public int getSenha() {
-    return senha;
-  }
-  public void setSenha(int senha) {
-    this.senha = senha;
-  }
- 
   @Override
   public double getBonificacao (){// reescrita, deixa a msm assinatura
     System.out.println("add bonificação para GERENTE");

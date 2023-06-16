@@ -13,7 +13,7 @@ public abstract class Funcionario {
   // public double getBonificacao(){
   //   return -1; gambiarra;
   // }
-
+  
   //get e set nome
   public String getNome() {
     return nome;
