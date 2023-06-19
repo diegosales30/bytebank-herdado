@@ -1,11 +1,17 @@
 package bytebackherdado;
-
-public class Administrador extends Funcionario implements Autenticavel {
+//para usar interface precisa usar o implements;
+public class Cliente implements Autenticavel {
   
   private AutenticacaoUtil autenticador;
 
-  public Administrador() {
+
+  public Cliente() {
     this.autenticador = new AutenticacaoUtil();
+
+  }
+
+  public void logado () {
+    System.out.println("cliente logado");
   }
 
   @Override
@@ -17,10 +23,7 @@ public class Administrador extends Funcionario implements Autenticavel {
   public boolean autentica(int senha) {
     return this.autenticador.autentica(senha);
   }
+
   
-  @Override
-  public double getBonificacao (){// reescrita, deixa a msm assinatura
-    System.out.println("add bonificação para ADMINISTRADOR");
-    return 50;
-  }
+
 }
